@@ -6,6 +6,8 @@ import { HeroSection } from "../components/HeroSection";
 import { AboutSection } from "../components/AboutSection";
 import { SkillsSection } from "../components/SkillsScetion";
 import { ProjectSection } from "../components/Projects";
+import { ContactSection } from "../components/ContactSection";
+import { Footer } from "../components/Footer";
 
 export const Home = () => {
   return (
@@ -22,8 +24,10 @@ export const Home = () => {
         <AboutSection />
         <SkillsSection />
         <ProjectSection />
+        <ContactSection />
       </main>
       {/*Rodape*/}
+      <Footer />
     </div>
   );
 };
