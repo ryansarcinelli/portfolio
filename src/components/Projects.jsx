@@ -3,15 +3,15 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Project 1",
+    title: "This portfolio",
     description: "Description of project 1",
-    image: "/projects/project1.png",
-    tags: ["HTML", "CSS", "JavaScript"],
-    demourl: "#",
-    githuburl: "#",
+    image: "/projects/portfolio.png",
+    tags: ["React", "JavaScript", "Tailwind CSS", "Vercel", "Toast"],
+    demourl: "https://portfolio-ryan-carlos-sarcinellis-projects.vercel.app/",
+    githuburl: "https://github.com/ryansarcinelli/portfolio",
   },
   {
-    id: 1,
+    id: 2,
     title: "Project 1",
     description: "Description of project 1",
     image: "projects/project1.png",
@@ -20,7 +20,7 @@ const projects = [
     githuburl: "#",
   },
   {
-    id: 1,
+    id: 3,
     title: "Project 1",
     description: "Description of project 1",
     image: "projects/project1.png",
