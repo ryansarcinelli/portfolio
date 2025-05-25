@@ -18,13 +18,17 @@ export const AboutSection = () => {
             <p className="text-muted-foreground"></p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <a href="#contact" className="cosmic-button">
+              <a
+                href="#contact"
+                className="px-6 py-3 rounded-full bg-primary text-white hover:bg-primary/90 transition-colors duration-300 text-center"
+              >
                 <span>Contact Me</span>
               </a>
 
               <a
-                href=""
-                className="px-6 py-3 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+                href="/ryan-cv.pdf"
+                download
+                className="px-6 py-3 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 text-center"
               >
                 <span>Download CV</span>
               </a>
@@ -39,7 +43,12 @@ export const AboutSection = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Web Development</h4>
-                  <p className="text-muted-foreground">escreva aqui</p>
+                  <p className="text-muted-foreground">
+                    {" "}
+                    Experienced in developing scalable front-end interfaces and
+                    robust back-end systems using JavaScript, React, Ruby on
+                    Rails, and RESTful APIs.
+                  </p>
                 </div>
               </div>
             </div>
@@ -50,7 +59,11 @@ export const AboutSection = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">UI/UX</h4>
-                  <p className="text-muted-foreground">escreva aqui</p>
+                  <p className="text-muted-foreground">
+                    I care about usability and aesthetics, designing intuitive
+                    and visually appealing interfaces focused on user experience
+                    and accessibility.
+                  </p>
                 </div>
               </div>
             </div>
@@ -61,7 +74,11 @@ export const AboutSection = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Project Managment</h4>
-                  <p className="text-muted-foreground">escreva aqui</p>
+                  <p className="text-muted-foreground">
+                    Skilled in organizing and executing development tasks, using
+                    tools like Git and agile methodologies to ensure timely and
+                    effective delivery.
+                  </p>
                 </div>
               </div>
             </div>

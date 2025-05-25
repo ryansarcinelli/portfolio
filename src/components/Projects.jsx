@@ -4,7 +4,8 @@ const projects = [
   {
     id: 1,
     title: "This portfolio",
-    description: "Description of project 1",
+    description:
+      "A personal portfolio showcasing my projects and skills made with React and hosted on Vercel",
     image: "/projects/portfolio.png",
     tags: ["React", "JavaScript", "Tailwind CSS", "Vercel", "Toast"],
     demourl: "https://portfolio-ryan-carlos-sarcinellis-projects.vercel.app/",
@@ -12,21 +13,22 @@ const projects = [
   },
   {
     id: 2,
-    title: "Project 1",
-    description: "Description of project 1",
-    image: "projects/project1.png",
-    tags: ["HTML", "CSS", "JavaScript"],
-    demourl: "#",
-    githuburl: "#",
+    title: "Metaheuristic Optimization for Hubs",
+    description:
+      "A metaheuristic optimization algorithm for hub location problems",
+    image: "projects/hubs.png",
+    tags: ["C", "C++", "Metaheuristics"],
+    demourl: "https://youtu.be/XOy7S4Xq-uk",
+    githuburl: "https://github.com/ryansarcinelli/metodos-otimizacao-hubs",
   },
   {
     id: 3,
-    title: "Project 1",
-    description: "Description of project 1",
-    image: "projects/project1.png",
-    tags: ["HTML", "CSS", "JavaScript"],
-    demourl: "#",
-    githuburl: "#",
+    title: "Todo List with Ruby on Rails",
+    description: "Full-stack application built with Ruby on Rails",
+    image: "projects/todolistrails.png",
+    tags: ["Ruby", "Ruby on Rails", "SQLite", "Bootstrap"],
+    demourl: "https://youtu.be/GznqA-iaPMI",
+    githuburl: "https://github.com/ryansarcinelli/Todo-list-with-ruby",
   },
 ];
 
@@ -69,7 +71,10 @@ export const ProjectSection = () => {
                 </div>
 
                 <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4"></p>
+                <p className="text-muted-foreground text-sm mb-4">
+                  {project.description}
+                </p>
+
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
                     <a
