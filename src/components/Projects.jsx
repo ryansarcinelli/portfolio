@@ -23,6 +23,33 @@ const projects = [
   },
   {
     id: 3,
+    title: "Movie List web app with React",
+    description: "A movie list web application built with React and Tailwind CSS using also external API such as TMDB and Appwrite",
+    image: "projects/movielist.png",
+    tags: ["React", "JavaScript", "Tailwind CSS", "TMDB API", "Appwrite API"],
+    demourl: "https://movie-webapp-nu-three.vercel.app/",
+    githuburl: "https://github.com/ryansarcinelli/movieWebapp",
+  },
+  {
+    id: 4,
+    title: "Re making my university's website",
+    description: "A team effort to remake my university's website using Vue.js and vue-router",
+    image: "projects/portaldoaluno.png",
+    tags: ["Vue.js", "JavaScript", "CSS", "HTML", "vue-router"],
+    demourl: "https://portal-do-aluno-seven.vercel.app/",
+    githuburl: "https://github.com/ryansarcinelli/Todo-list-with-ruby",
+  },
+  {
+    id: 5,
+    title: "Python AI Image Classifier",
+    description: "A Python application that uses machine learning to classify images",
+    image: "projects/imgpy.png",
+    tags: ["Python", "Machine Learning", "TensorFlow",],
+    demourl: "https://youtu.be/v-KwnsRo34U",
+    githuburl: "",
+  },
+  {
+    id: 6,
     title: "Todo List with Ruby on Rails",
     description: "Full-stack application built with Ruby on Rails",
     image: "projects/todolistrails.png",
@@ -45,11 +72,11 @@ export const ProjectSection = () => {
           beautiful and functional web applications.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="flex flex-wrap gap-8 justify-center">
           {projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-x5 card-hover"
+              className="group bg-card rounded-lg overflow-hidden shadow-x5 card-hover w-full sm:w-[48%] lg:w-[30%]"
             >
               <div className="h-48 overflow-hidden">
                 <img

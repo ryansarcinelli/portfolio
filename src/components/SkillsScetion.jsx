@@ -6,17 +6,15 @@ const skills = [
   { name: "HTML/CSS", category: "frontend" },
   { name: "JavaScript", category: "frontend" },
   { name: "React", category: "frontend" },
+  { name: "Vue", category: "frontend" },
   { name: "Tailwind CSS", category: "frontend" },
-
   //Backend
-  { name: "Java", category: "backend" },
+  { name: "PHP", category: "backend" },
   { name: "MySql", category: "backend" },
   { name: "PostgreeSQL", category: "backend" },
-  { name: "Ruby", category: "backend" },
-
+  //Tools
   { name: "Git/Github", category: "tools" },
   { name: "Figma", category: "tools" },
-  { name: "VsCode", category: "tools" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
