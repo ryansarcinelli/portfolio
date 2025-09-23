@@ -1,6 +1,7 @@
 import { cn } from "../lib/util";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
   { name: "Home", href: "#hero" },
@@ -37,7 +38,8 @@ export const Navbar = () => {
           className="text-xl font-bold text-primary flex items-center"
         >
           <span className="relative z-10">
-            <span className="text-glow text-foreground"> Ryan Sarcinelli </span>{""}
+            <span className="text-glow text-foreground"> Ryan Sarcinelli </span>
+            {""}
             Portfolio
           </span>
         </a>
@@ -45,20 +47,26 @@ export const Navbar = () => {
         {/*desktop nav*/}
         <div className="hidden md:flex space-x-8">
           {navItems.map((item, key) => (
-           <a key={key} href={item.href} className="text-foreground hover:text-primary transition-colors duration-300">{item.name}</a>
+            <a
+              key={key}
+              href={item.href}
+              className="text-foreground hover:text-primary transition-colors duration-300"
+            >
+              {item.name}
+            </a>
           ))}
         </div>
 
         {/*mobile nav*/}
-
-        <button
+            <button
           onClick={() => setIsMobileMenuOpen((prev) => !prev)}
-          className="md:hidden p-2 text-foreground z-50"
+          className="md:hidden p-2 text-foreground z-50 mr-3.5"
           aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           {""}
         </button>
+        
 
         <div
           className={cn(

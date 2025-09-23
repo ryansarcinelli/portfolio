@@ -3,18 +3,20 @@ import { cn } from "../lib/util";
 
 const skills = [
   //Frontend
-  { name: "HTML/CSS", category: "frontend" },
-  { name: "JavaScript", category: "frontend" },
-  { name: "React", category: "frontend" },
-  { name: "Vue", category: "frontend" },
-  { name: "Tailwind CSS", category: "frontend" },
+  { name: "HTML/CSS", category: "frontend", level: 90 },
+  { name: "JavaScript", category: "frontend", level: 85 },
+  { name: "Next.js", category: "frontend", level: 75 },
+  { name: "React", category: "frontend", level: 80 },
+  { name: "Vue", category: "frontend", level: 60 },
+  { name: "Tailwind CSS", category: "frontend", level: 80 },
   //Backend
-  { name: "PHP", category: "backend" },
-  { name: "MySql", category: "backend" },
-  { name: "PostgreeSQL", category: "backend" },
+  { name: "PHP", category: "backend", level: 70 },
+  { name: "Python", category: "backend", level: 75 },
+  { name: "MySql", category: "backend", level: 65 },
+  { name: "PostgreeSQL", category: "backend", level: 60 },
   //Tools
-  { name: "Git/Github", category: "tools" },
-  { name: "Figma", category: "tools" },
+  { name: "Git/Github", category: "tools", level: 85 },
+  { name: "Figma", category: "tools", level: 60 },
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
@@ -54,10 +56,16 @@ export const SkillsSection = () => {
               key={key}
               className="bg-card p-6 rounded-lg shadow-xs card-hover"
             >
-              <div className="text-center mb-4">
+              <div className="text-center mb-3">
                 <h3 className="font-semibold">{skill.name}</h3>
-                <div className="w-full bg-secondary h-2 rounded-full overflow-hidden">
-                  <div className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]" />
+                <div className="w-full bg-secondary h-3 rounded-full overflow-hidden relative">
+                  <div
+                    className="bg-primary h-2 rounded-full origin-left transition-all duration-700"
+                    style={{ width: `${skill.level}%` }}
+                  />
+                  <span className="absolute right-0 top-1/2 -translate-y-1/2 text-xs text-primary font-bold ">
+                    {skill.level}%
+                  </span>
                 </div>
               </div>
             </div>
